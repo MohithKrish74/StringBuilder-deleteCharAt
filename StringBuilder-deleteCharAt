@@ -1,0 +1,29 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter the string: " );
+        String string=in.nextLine();
+        StringBuilder stringbuilder = new StringBuilder(string);
+        System.out.print("Enter the index to delete the character from the string ");
+        int index=in.nextInt();
+        System.out.println("The character at the index "+index+ " after removing is "+stringbuilder.deleteCharAt(index));
+
+
+    }
+
+}
+
+
+
+
+
+
+
